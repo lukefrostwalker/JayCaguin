@@ -138,8 +138,8 @@ footer {
 .masthead {
     background-color: #000;
 }
-.masthead_image {
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(../img/work_re3.png) no-repeat center;
+.masthead .masthead_image {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(../img/Work_re3.png) no-repeat center;
     background-size: cover;
     height: 80vh;
     margin-top: 55px;
