@@ -20,6 +20,11 @@ nav .container-fluid {
     scroll-snap-type: y mandatory;
     overflow-y: auto;
 }
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-margin-top: 100px;
+}
 .main::-webkit-scrollbar {
     width: 1px;
     height: 1px;
@@ -27,11 +32,6 @@ nav .container-fluid {
 .main::-webkit-scrollbar-thumb {
     background: #a2a2a2;
     border-radius: 20px;
-}
-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-margin-top: 100px;
 }
 .title_text {
     line-height: 1;
@@ -45,6 +45,18 @@ section {
     width: 100%;
     height: calc(100% - 3rem);
 }
+.home .title {
+    height: 90vh;
+}
+.works .title {
+    height: 90vh;
+}
+.about .title {
+    height: 90vh;
+}
+.contact .title {
+    height: 80vh;
+}
 .borderLine {
     width: 88px;
     height: 4px;
@@ -57,6 +69,7 @@ section {
 .title .border-span span:nth-child(2){
     margin-left: 2rem;
 }
+
 /* -----------------------------------WORK LANDING */
 span.works_image {
     background: url(../img/work_re.png) no-repeat center;
@@ -81,11 +94,11 @@ span.about_image {
     transform: translate(0);
 }
 .contact_socials>div:first-child>div a {
-    border-top: 1px solid #383838;
+    border-top: 1px solid #ff4d5a;
     padding: 1rem 0.5rem;
     justify-items: space-between;
     text-decoration: none;
-    background-color: #FCFAF8;
+    /* background-color: ; */
 }
 .contact_socials>div:first-child>div a p:first-child {
     font-size: 20px;
@@ -100,15 +113,52 @@ span.about_image {
 .contact_socials > div:first-child > div a:hover {
     padding: 8px 16px;
     border-top: 1px solid transparent;
-    background-color: #a2a2a2;
+    background-color: #414141;
     transition: all .3s ease-in;
     color: #FCFAF8 !important;
+}
+.contact_socials > div:first-child > div a:hover i {
+    color: #ff4d5a;
 }
 footer {
     height: 100px;
 }
-.footer_card
+.footer img {
+    width: 55px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #383838);
+}
+.footer_card {
+    background-color: transparent;
+}
+.footer_text {
+    line-height: 1;
+}
+
 /* -----------------------------------WORK page */
+.masthead {
+    background-color: #000;
+}
+.masthead_image {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(../img/work_re3.png) no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    margin-top: 55px;
+    display: block;
+}
+.works_borderLine {
+    width: 88px;
+    height: 4px;
+    border-radius: 5px;
+    background: #FCFAF8;
+}
+.title .works_border-span span:first-child {
+    margin-bottom: 1rem;
+}
+.title .works_border-span span:nth-child(2){
+    margin-left: 2rem;
+}
+  
+  /*---------------------------------------------------  */
 .work_page {
     height: 65vh;
     margin-top: 5rem;
@@ -143,7 +193,7 @@ img {
     width: 100%;
     opacity: 0;
     transition: opacity .5s;
-    background:#38383862;
+    background:#383838ce;
 }
 .work_list:hover .work_title {
     opacity: 1;
@@ -241,7 +291,7 @@ a {
     color: #414141;
 }
 .wcolor {
-    color: #FCFAF8;
+    color: #FCFAF8 !important;
 }
 /* -------------------------------------Hover links */
 .link_animation {
@@ -299,6 +349,9 @@ a {
         /* width: 80%; */
         height: 50vh;
     }
+    .masthead_image {
+        height: 40vh;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .clip-text {
@@ -306,6 +359,9 @@ a {
     }
     .aboutme_card {
         padding-top: 15%;
+    }
+    .masthead_image {
+        height: 50vh;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
