@@ -28,15 +28,15 @@ nav .container-fluid {
     background: #a2a2a2;
     border-radius: 20px;
 }
-
 section {
-    height: 95vh;
+    height: 100vh;
     scroll-snap-align: start;
     scroll-margin-top: 100px;
 }
 .title_text {
     line-height: 1;
-}~
+    z-index: 500;
+}
 .title_lead {
     color: #a2a2a2;
     line-height: 1;
@@ -57,9 +57,64 @@ section {
 .title .border-span span:nth-child(2){
     margin-left: 2rem;
 }
-/* -----------------------------------WORK GALLERY */
+/* -----------------------------------WORK LANDING */
+span.works_image {
+    background: url(../img/work_re.png) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    display: block;
+}
+/* ------------------------------------ABOUT ME landing*/
+span.about_image {
+    background: url(../img/about_re2.png) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    display: block;
+}
+/* -----------------------------------CONTACT */
+.card-contact {
+    height: 80%;
+}
+.contact_socials>div:first-child.is-inview>div {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+.contact_socials>div:first-child>div a {
+    border-top: 1px solid #383838;
+    padding: 1rem 0.5rem;
+    justify-items: space-between;
+    text-decoration: none;
+    background-color: #FCFAF8;
+}
+.contact_socials>div:first-child>div a p:first-child {
+    font-size: 20px;
+    padding: 0;
+    
+}
+.contact_socials>div:first-child>div a p:last-child {
+    font-size: 12px;
+    padding: 0;
+    
+}
+.contact_socials > div:first-child > div a:hover {
+    padding: 8px 16px;
+    border-top: 1px solid transparent;
+    background-color: #a2a2a2;
+    transition: all .3s ease-in;
+    color: #FCFAF8 !important;
+}
+footer {
+    height: 100px;
+}
+.footer_card
+/* -----------------------------------WORK page */
+.work_page {
+    height: 65vh;
+    margin-top: 5rem;
+}
 img {
-    width: 120%;
+    width: 100%;
     height: auto;
 }
 .work_gallery {
@@ -97,49 +152,7 @@ img {
 .work_list:hover .work_image img {
     filter: blur(2px);
 }
-/* for touch screen devices */
-/* ------------------------------------ABOUT ME */
-/* -----------------------------------CONTACT */
-.card-contact {
-    height: 80%;
-}
-.contact_socials>div:first-child.is-inview>div {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0);
-}
-.contact_socials>div:first-child>div a {
-    border-top: 1px solid #383838;
-    padding: 1rem 0.5rem;
-    justify-items: space-between;
-    text-decoration: none;
-    background-color: #FCFAF8;
-
-
-}
-.contact_socials>div:first-child>div a p:first-child {
-    font-size: 24px;
-    padding: 0;
-    
-}
-.contact_socials>div:first-child>div a p:last-child {
-    font-size: 12px;
-    padding: 0;
-    
-}
-.contact_socials > div:first-child > div a:hover {
-    padding: 8px 16px;
-    border-top: 1px solid transparent;
-    background-color: #a2a2a2;
-    transition: all .3s ease-in;
-    color: #FCFAF8 !important;
-
-}
-footer {
-    height: 100px;
-}
-.footer_card
-/* -----------------------------------Hero Image? */
+/* -----------------------------------ABOUT PAGE */
 
 .aboutMe .title {
     position: absolute;
@@ -153,13 +166,6 @@ footer {
     height: 50px;
     width: 50px;
 }
-.about_section {
-    margin-top: 5rem;
-}
-.about_section:last-child {
-    margin-bottom: 5rem;
-}
-/* -------------------------------------ABOUT IMAGE MASK */
 .clip-text {
     font-size: 5vw;
     line-height: 1;
@@ -169,6 +175,8 @@ footer {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: url(../img/jay_re.png);
+    background-size: contain;
 }
 .clip-text:before,
 .clip-text:after {
@@ -201,16 +209,9 @@ footer {
 .clip-text--cover,
 .clip-text--cover:before {
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover; */
     background-size: cover;
     background-position: 50% 50%;
 }
-.clip-text_one {
-    background-image: url(/img/W1.jpg);
-    background-size: contain;
-}
-/* ---------------------------------------About Me Page (Image) */
-
 .skill_img .icon {
     filter: grayscale(100%);
     transition: filter .2s ease-in-out;
@@ -222,8 +223,6 @@ footer {
 .custom-tooltip {
     --bs-tooltip-bg: var(--bs-secondary);
 }
-
-
 /* -------------------------------------General fixes */
 a {
     color: #383838 !important;
@@ -250,7 +249,6 @@ a {
     position: relative;
     /* color: #0087ca; */
 }
-
 .link_animation:after {
     content: '';
     position: absolute;
@@ -277,7 +275,6 @@ a {
         filter: blur(2px);
     }
 }
-
 @media (max-width: 575px) {
     .works_card, .aboutme_card {
         padding-top: 15%;
@@ -298,6 +295,10 @@ a {
         height: 45px;
         width: 45px;
     }
+    span.works_image, span.about_image {
+        /* width: 80%; */
+        height: 50vh;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .clip-text {
@@ -312,11 +313,5 @@ a {
         font-size: 6vw;
     }
 }
-/* @media (min-width: 1024px) {
-    .work_gallery {
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));    
-    }
-
-} */
 
 
