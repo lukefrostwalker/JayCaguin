@@ -349,7 +349,7 @@ a {
         /* width: 80%; */
         height: 50vh;
     }
-    .masthead_image {
+    .masthead .masthead_image {
         height: 40vh;
     }
 }
@@ -360,7 +360,7 @@ a {
     .aboutme_card {
         padding-top: 15%;
     }
-    .masthead_image {
+    .masthead .masthead_image {
         height: 50vh;
     }
 }
