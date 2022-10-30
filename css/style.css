@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
 
 body {
-    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #FCFAF8;   
+    background-color: #fcfaf8;   
     font-family: 'Montserrat', sans-serif;
-    color: #383838 !important; 
-    scroll-behavior: smooth;
+    /* color: #383838 !important;  */
 }
-nav .container-fluid {
+nav {
     padding: 1% 5%;
+    background: #fcfaf84b;
 }
 /* -----------------------------------container single page */
 .main {
-    width: 100%;
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: auto;
@@ -23,8 +21,20 @@ nav .container-fluid {
 section {
     height: 100vh;
     scroll-snap-align: start;
-    scroll-margin-top: 100px;
+    /* scroll-padding-top: 100px; */
 }
+/* section:nth-of-type(1) {
+    background: rgb(111, 255, 255);
+}
+section:nth-of-type(2) {
+    background: rgb(255, 111, 111);
+}
+section:nth-of-type(3) {
+    background: rgb(101, 247, 167);
+}
+section:nth-of-type(4) {
+    background: rgb(126, 98, 248);
+} */
 .main::-webkit-scrollbar {
     width: 1px;
     height: 1px;
@@ -43,9 +53,9 @@ section {
 }
 .title {
     width: 100%;
-    height: calc(100% - 3rem);
+    height: 100%;
 }
-.home .title {
+/* .home .title {
     height: 90vh;
 }
 .works .title {
@@ -55,8 +65,7 @@ section {
     height: 90vh;
 }
 .contact .title {
-    height: 80vh;
-}
+    height: 80vh; */
 .borderLine {
     width: 88px;
     height: 4px;
@@ -76,6 +85,7 @@ span.works_image {
     background-size: cover;
     height: 600px;
     display: block;
+    border-radius: 10px;
 }
 /* ------------------------------------ABOUT ME landing*/
 span.about_image {
@@ -83,6 +93,7 @@ span.about_image {
     background-size: cover;
     height: 600px;
     display: block;
+    border-radius: 10px;
 }
 /* -----------------------------------CONTACT */
 .card-contact {
@@ -157,8 +168,6 @@ footer {
 .title .works_border-span span:nth-child(2){
     margin-left: 2rem;
 }
-  
-  /*---------------------------------------------------  */
 .work_page {
     height: 65vh;
     margin-top: 5rem;
@@ -212,10 +221,6 @@ img {
     font-family: 'Open Sans', sans-serif;
     color: #a2a2a2;
 }
-.skill img {
-    height: 50px;
-    width: 50px;
-}
 .clip-text {
     font-size: 5vw;
     line-height: 1;
@@ -240,6 +245,7 @@ img {
     bottom: 0;
     left: 0;
     background-image: inherit;
+    border-radius: 10px;
 }
 .clip-text:after {
     position: absolute;
@@ -249,6 +255,7 @@ img {
     bottom: .125em;
     left: .125em;
     background-color: #4141419c;
+    border-radius: 10px;
 }
 .clip-text--no-textzone:before {
     background-position: -.75em 0;
@@ -261,6 +268,10 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+.skill img {
+    height: 50px;
+    width: 50px;
 }
 .skill_img .icon {
     filter: grayscale(100%);
@@ -326,6 +337,9 @@ a {
     }
 }
 @media (max-width: 575px) {
+    .contact_socials>div:first-child>div a {
+        padding: 0.8rem 0.5rem;
+    }    
     .works_card, .aboutme_card {
         padding-top: 15%;
     }
