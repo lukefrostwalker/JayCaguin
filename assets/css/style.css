@@ -62,7 +62,6 @@ section {
   height: 100vh;
   /* scroll-snap-align: start; */
 }
-
 .main::-webkit-scrollbar {
   width: 1px;
   height: 1px;
@@ -96,7 +95,10 @@ section {
 .title .border-span span:nth-child(2) {
   margin-left: 2rem;
 }
-
+.title_img {
+  background-color: #ff4d594b;
+  border-radius: 10px;
+}
 /* -----------------------------------HOME - WORK SECTION */
 span.works_image {
   background: url(../img/work_re.png) no-repeat center;
@@ -106,6 +108,7 @@ span.works_image {
   border-radius: 10px;
 }
 /* ------------------------------------HOME - ABOUT ME SECTION*/
+
 span.about_image {
   background: url(../img/about_re2.png) no-repeat center;
   background-size: cover;
@@ -265,18 +268,7 @@ img {
   background-color: #4141419c;
   border-radius: 10px;
 }
-.clip-text--no-textzone:before {
-  background-position: -0.75em 0;
-}
-.clip-text--no-textzone:after {
-  content: none;
-}
-.clip-text--cover,
-.clip-text--cover:before {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
+
 .viewCert {
   font-family: inherit;
 }
