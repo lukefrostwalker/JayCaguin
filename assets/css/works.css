@@ -1,0 +1,93 @@
+.project_card_container {
+  margin-top: 30px;
+}
+.project_card {
+  padding: 0;
+}
+.project_card .inner {
+  background: #333;
+  display: block;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.project_card .inner .project_click {
+  align-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  mix-blend-mode: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+.project_card .inner .project_click:hover {
+  background-color: #6e226f67;
+}
+.flex_this {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 400px;
+  margin: 0;
+  padding: 10px;
+  transition: all 300ms ease;
+  width: 100%;
+  opacity: 0;
+}
+.project_card .inner .project_click:hover .flex_this {
+  transition: all 300ms ease;
+  margin-top: -5px;
+  opacity: 1;
+}
+
+.project_title {
+  padding: 5px;
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #000;
+  color: #fcfaf8;
+}
+
+@media only screen and (max-width: 767px) {
+  .project_card {
+    width: 100%;
+  }
+}
+
+.project_card .inner {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #74236f1a;
+  background-blend-mode: multiply;
+}
+#box1 {
+  background-image: url('../img/websites/urbanread_mern.png');
+}
+#box2 {
+  background-image: url('../img/websites/codefitmeals.png');
+}
+#box3 {
+  background-image: url('../img/websites/jajanken.png');
+}
+#box4 {
+  background-image: url('../img/websites/passwordgenerator.png');
+}
+#box5 {
+  background-image: url('../img/websites/todo.png');
+}
+#box6 {
+  background-image: url('../img/websites/converterKodego.png');
+}
+#box7 {
+  background-image: url('../img/websites/converterScrimba.png');
+}
+#box8 {
+  background-image: url('https://picsum.photos/480/270');
+}
