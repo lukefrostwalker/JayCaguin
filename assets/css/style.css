@@ -52,13 +52,6 @@ nav {
   padding: 1% 5%;
   background: #fcfaf84b;
 }
-.offcanvas-body {
-  background-image: url('../img/jay.svg');
-  width: 590px;
-  background-size: contain;
-  background-position: bottom 0px right -22px;
-  background-repeat: no-repeat;
-}
 /* -----------------------------------HOME PAGE*/
 .main {
   height: 100%;
@@ -373,5 +366,13 @@ img {
 @media (min-width: 768px) and (max-width: 991px) {
   .clip-text {
     font-size: 6vw;
+  }
+}
+@media (max-width: 991px) {
+  .offcanvas-body {
+    background-image: url('../img/jay.svg');
+    background-size: contain;
+    background-position: bottom 0px right -22px;
+    background-repeat: no-repeat;
   }
 }
