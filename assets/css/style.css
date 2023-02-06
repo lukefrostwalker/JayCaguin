@@ -52,6 +52,9 @@ nav {
   padding: 1% 5%;
   background: #fcfaf84b;
 }
+.navbar-brand {
+  text-shadow: 1x 1px 2px #383838;
+}
 /* -----------------------------------HOME PAGE*/
 .main {
   height: 100%;
@@ -295,14 +298,14 @@ img {
 }
 
 /* ------------------------------------------------MEDIA */
-@media (hover: none) {
+/* @media (hover: none) {
   .work_title {
     opacity: 1;
   }
   .work_image img {
     filter: blur(2px);
   }
-}
+} */
 @media (max-width: 575px) {
   #cardGroupIndex {
     font-size: 12px;
@@ -324,7 +327,7 @@ img {
     padding: 0;
   }
   .clip-text {
-    font-size: 10vw;
+    font-size: 11.5vw;
   }
   .skill img {
     height: 45px;
@@ -339,22 +342,22 @@ img {
   }
 }
 @media (max-height: 963px) and (max-width: 767px) {
-  #navIndex {
+  /* #navIndex {
     background-color: transparent;
   }
   #navbarTogglerIndex {
     background-color: #fcfaf8;
-  }
-  #brandIndex {
+  } */
+  /* #brandIndex {
     opacity: 0;
-  }
+  } */
 }
 @media (min-width: 576px) and (max-width: 767px) {
   #cardGroupIndex {
     font-size: 12px;
   }
   .clip-text {
-    font-size: 350%;
+    font-size: 11.5vw;
   }
   .aboutme_card {
     padding-top: 15%;
@@ -363,9 +366,20 @@ img {
     height: 50vh;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 790px) {
   .clip-text {
-    font-size: 6vw;
+    font-size: 7.5vw;
+  }
+  .title_text {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 791px) and (max-width: 991px) {
+  .clip-text {
+    font-size: 5.5vw;
+  }
+  .title_text {
+    margin-top: 50px;
   }
 }
 @media (max-width: 991px) {
@@ -374,5 +388,13 @@ img {
     background-size: contain;
     background-position: bottom 0px right -22px;
     background-repeat: no-repeat;
+  }
+  .title_text {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1125px) {
+  .clip-text {
+    font-size: 8vw;
   }
 }
