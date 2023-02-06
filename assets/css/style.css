@@ -52,6 +52,13 @@ nav {
   padding: 1% 5%;
   background: #fcfaf84b;
 }
+.offcanvas-body {
+  background-image: url('../img/jay.svg');
+  width: 590px;
+  background-size: contain;
+  background-position: bottom 0px right -22px;
+  background-repeat: no-repeat;
+}
 /* -----------------------------------HOME PAGE*/
 .main {
   height: 100%;
@@ -155,6 +162,9 @@ span.about_image {
 }
 footer {
   height: 100px;
+}
+#cardGroupIndex li {
+  margin-bottom: 5px;
 }
 .footer img {
   width: 55px;
