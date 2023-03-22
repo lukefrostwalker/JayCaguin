@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" id="favicon" href="assets/img/favicon.png" />
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/c636ad103d.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="navi">
+            <!-- NAV BAR -->
+        </div>
+        <div class="contact-container container">
+            <div
+                class="contact-title d-flex flex-column justify-content-center"
+            >
+                <h1
+                    class="mb-5"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                >
+                    Let's build something <br /><span
+                        class="d-inline-block accent"
+                        data-aos="fade-right"
+                        data-aos-duration="1500"
+                        >great together.</span
+                    >
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1500">
+                    Let's brainstorm new tech ideas and explore business
+                    opportunities together!
+                </p>
+            </div>
+
+            <form
+                action="https://script.google.com/macros/s/AKfycbwqazmWkztIcTsaQs-qRlqnJhGT0JgxJ2BjE5bFPRGPgJtk1PFWu-4OaA9unMJGSCHosA/exec"
+                method="post"
+                class="container contact-form"
+            >
+                <div class="contact-form-section d-lg-flex">
+                    <div class="col-lg-4">
+                        <h2
+                            class="mt-1 fs-1"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            About you
+                        </h2>
+                    </div>
+                    <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                    >
+                        <div class="form-floating">
+                            <input
+                                type="text"
+                                name="Name"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="Juan dela Cruz"
+                                required
+                            />
+                            <label for="floatingInput"> Name * </label>
+                        </div>
+                        <div class="form-floating">
+                            <input
+                                type="email"
+                                name="Email"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="jdcruz@email.com"
+                                required
+                            />
+                            <label for="floatingInput">Email *</label>
+                        </div>
+
+                        <div class="form-floating">
+                            <input
+                                type="tel"
+                                name="Phone"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="+639171234567"
+                                required
+                            />
+                            <label for="floatingInput">Phone</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-section d-lg-flex">
+                    <div class="col-lg-4">
+                        <h2
+                            class="fs-1 m-0"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            Your message
+                        </h2>
+                    </div>
+                    <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                    >
+                        <div class="form-floating">
+                            <textarea
+                                type="input"
+                                name="Message"
+                                class="form-control message"
+                                id="floatingInput"
+                                required
+                                placeholder="What do you want to achieve *"
+                                rows="5"
+                                style="height: 150px"
+                            ></textarea>
+                            <label for="floatingInput"
+                                >What do you want to achieve? *</label
+                            >
+                        </div>
+
+                        <button type="submit" class="w-100">
+                            <span>SUBMIT</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer id="footer">
+            <!-- FOOTER -->
+        </footer>
+        <script>
+            window.addEventListener('load', function () {
+                const form = document.querySelector('form');
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const loader = document.createElement('div');
+                    loader.classList.add('loader');
+                    form.appendChild(loader);
+
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                        method: 'POST',
+                        body: data,
+                    })
+                        .then(() => {
+                            form.submit();
+                            window.location.href = 'thank-you.html';
+                        })
+                        .catch((error) => {
+                            alert(error.message);
+                        });
+                });
+            });
+        </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="assets/js/render.js" type="module"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

@@ -1,93 +1,159 @@
+.masthead {
+    background-color: #ff4d594b;
+    margin-bottom: 2em;
+}
+.masthead_image {
+    background: radial-gradient(
+                ellipse at center,
+                rgba(0, 0, 0, 0) 0,
+                rgba(0, 0, 0, 0) 37%,
+                rgba(0, 0, 0, 0.65) 100%
+            )
+            0 0 / cover,
+        url(../img/work.png) center/cover no-repeat;
+    height: 40dvh;
+}
 .project_card_container {
-  margin-top: 30px;
+    margin-top: 30px;
+}
+.project_card_container > div:first-child {
+    order: 1;
 }
 .project_card {
-  padding: 0;
+    padding: 0;
 }
 .project_card .inner {
-  background: #333;
-  display: block;
-  margin: 10px;
-  overflow: hidden;
-  border-radius: 5px;
+    display: block;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: 50% 50% / cover no-repeat;
+    background-color: #74236f1a;
+    background-blend-mode: multiply;
 }
 .project_card .inner .project_click {
-  align-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  height: 350px;
-  mix-blend-mode: normal;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms ease;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    mix-blend-mode: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
 }
 .project_card .inner .project_click:hover {
-  background-color: #6e226f67;
+    background-color: #6e226f67;
 }
 .flex_this {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  width: 400px;
-  margin: 0;
-  padding: 10px;
-  transition: all 300ms ease;
-  width: 100%;
-  opacity: 0;
+    padding: 10px;
+    transition: 0.3s;
+    opacity: 0;
 }
 .project_card .inner .project_click:hover .flex_this {
-  transition: all 300ms ease;
-  margin-top: -5px;
-  opacity: 1;
+    transition: 0.3s;
+    margin-top: -5px;
+    opacity: 1;
 }
-
 .project_title {
-  padding: 5px;
-  font-size: 26px;
-  font-weight: 700;
-  text-shadow: 1px 1px 3px #000;
-  color: #fcfaf8;
+    padding: 5px;
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #000;
+    color: #fcfaf8;
 }
-
-@media only screen and (max-width: 767px) {
-  .project_card {
-    width: 100%;
-  }
+#project_link {
+    font-size: 0.7em;
+    font-weight: 700;
 }
-
-.project_card .inner {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #74236f1a;
-  background-blend-mode: multiply;
+.project_link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: transparent;
+    background-color: #fcfaf8;
+    text-transform: uppercase;
+    color: #212529;
+    transition: 0.3s;
+    letter-spacing: 0.1em;
+}
+.project_link:hover {
+    color: #fcfaf8 !important;
+    background-color: #212529;
 }
 #box1 {
-  background-image: url('../img/websites/urbanread_mern.png');
+    background-image: url('../img/websites/urbanread_mern.webp');
 }
 #box2 {
-  background-image: url('../img/websites/codefitmeals.png');
+    background-image: url('../img/websites/codefitmeals.webp');
 }
 #box3 {
-  background-image: url('../img/websites/jajanken.png');
+    background-image: url('../img/websites/jajanken.webp');
 }
 #box4 {
-  background-image: url('../img/websites/passwordgenerator.png');
+    background-image: url('../img/websites/passwordgenerator.webp');
 }
 #box5 {
-  background-image: url('../img/websites/todo.png');
+    background-image: url('../img/websites/todo.webp');
 }
 #box6 {
-  background-image: url('../img/websites/converterKodego.png');
+    background-image: url('../img/websites/converterKodego.webp');
 }
 #box7 {
-  background-image: url('../img/websites/converterScrimba.png');
+    background-image: url('../img/websites/converterScrimba.webp');
 }
 #box8 {
-  background-image: url('https://picsum.photos/480/270');
+    background-image: url('https://picsum.photos/480/270');
+}
+@media (hover: none) {
+    .flex_this {
+        opacity: 1;
+    }
+    .project_card .inner .project_click {
+        background-color: #6e226f67;
+    }
+}
+@media (max-width: 320px) {
+    .project_title {
+        font-size: 1rem;
+    }
+    .project_link {
+        padding: 6px 12px;
+    }
+}
+@media (min-width: 576px) {
+    .masthead_image {
+        height: 40dvh;
+        background-position: center 80%;
+    }
+    .flex_this,
+    .inner,
+    .project_card .inner .project_click {
+        height: 400px;
+    }
+}
+@media (min-width: 768px) {
+    .masthead_image {
+        height: 45vh;
+    }
+}
+@media (min-width: 992px) {
+    .masthead {
+        margin-bottom: 4em;
+    }
+    .masthead_image {
+        height: 50vh;
+    }
+}
+@media (min-width: 1200px) {
+    .masthead_image {
+        height: 60vh;
+    }
+}
+@media (min-width: 1400px) {
+    .masthead_image {
+        height: 70dvh;
+    }
 }

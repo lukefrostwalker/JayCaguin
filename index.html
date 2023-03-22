@@ -1,487 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jay Caguin</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/c636ad103d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="navIndex">
-      <div class="container">
-        <a class="navbar-brand" href="index.html" id="brandIndex">JC/</a>
-        <button
-          class="navbar-toggler"
-          id="navbarTogglerIndex"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#navbarOffcanvasLg"
-          aria-controls="navbarOffcanvasLg"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="navbarOffcanvasLg"
-          aria-labelledby="navbarOffcanvasLgLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title colored" id="offcanvasNavbarLabel">
-              JAY CAGUIN
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto">
-              <li class="link_animation nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="link_animation nav-item">
-                <a class="nav-link" href="works.html">Works</a>
-              </li>
-              <li class="link_animation nav-item">
-                <a class="nav-link" href="about.html">About Me</a>
-              </li>
-              <li class="link_animation nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+<html>
+    <head>
+        <title>Jay Caguin</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" id="favicon" href="assets/img/favicon.png" />
 
-    <div class="container main">
-      <!-------------------------------------------- FIRST PAGE - LANDING --------------------------------------------------->
-      <section class="home" id="home">
-        <div class="title d-flex flex-column justify-content-center">
-          <div class="col-10 title_text">
-            <h1
-              class="title_text display-1 pt-5"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              Hi, you found me! I'm a<br />
-              <span
-                class="d-inline-block colored"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                full-stack web developer.
-              </span>
-              Let's connect and build something amazing together!
-            </h1>
-            <div class="col-5 justify-content-end">
-              <h2
-                class="title_lead text-start mt-5 colored"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-anchor="#home"
-              >
-                JAY CAGUIN
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-------------------------------------------- SECOND PAGE - WORKS -------------------------------------------------->
-      <section class="works" id="works">
-        <div
-          class="title d-flex flex-md-row flex-column align-items-md-center justify-content-center"
-        >
-          <div class="col-md-4 order-md-1 order-2">
-            <h1
-              class="title_text display-1 pt-5"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#works"
-            >
-              Works
-            </h1>
-            <div class="border-span mb-2">
-              <span
-                class="borderLine d-block mt-4"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#works"
-              ></span>
-              <span
-                class="borderLine d-block mb-4"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#works"
-              ></span>
-            </div>
-            <p
-              class="title_lead fs-1"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#works"
-            >
-              Web Apps
-            </p>
-            <div class="">
-              <a
-                class="link_animation"
-                href="works.html"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#works"
-              >
-                View works
-              </a>
-            </div>
-          </div>
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/c636ad103d.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Snap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="assets/js/jquery.onepage-scroll.js"
+        ></script>
+        <link
+            href="assets/css/onepage-scroll.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/spinner.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
 
-          <div
-            class="col-md-8 order-md-2 order-1 title_img"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
-            data-aos-anchor="#works"
-          >
-            <span
-              class="works_image"
-              data-aos="zoom-in-left"
-              data-aos-duration="1500"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#works"
-            ></span>
-          </div>
-        </div>
-      </section>
-      <!-------------------------------------------- THIRD PAGE - ABOUT --------------------------------------------------->
-      <section class="about" id="about">
-        <div
-          class="title d-flex flex-md-row flex-column align-items-md-center justify-content-center"
-          class="about_image"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
-          data-aos-anchor="#about"
-        >
-          <div class="col-md-8 order-md-2 order-1 title_img">
-            <span
-              class="about_image"
-              data-aos="zoom-in-left"
-              data-aos-duration="1500"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#about"
-            ></span>
-          </div>
-          <div class="col-md-4 order-md-1 order-2">
-            <h1
-              class="title_text display-1 pt-5"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#about"
-            >
-              About Me
-            </h1>
-            <div class="border-span mb-2">
-              <span
-                class="borderLine d-block mt-4"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#about"
-              ></span>
-              <span
-                class="borderLine d-block mb-4"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#about"
-              ></span>
-            </div>
-            <p
-              class="title_lead fs-1"
-              data-aos="fade-right"
-              data-aos-duration="1800"
-              data-aos-anchor-placement="top-center"
-              data-aos-anchor="#about"
-            >
-              A passionate<br />journey of curiosity
-            </p>
-            <div class="">
-              <a
-                class="link_animation"
-                href="about.html"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-anchor-placement="top-center"
-                data-aos-anchor="#about"
-              >
-                Read about me
-              </a>
-            </div>
-            <a
-              href="assets/Caguin_CV.pdf"
-              download
-              class="project_link mt-3 border border-secondary m-0"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-anchor="#about"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-------------------------------------------- FOURTH PAGE - CONTACT -------------------------------------------------->
-      <section class="contact" id="contact">
-        <div
-          class="d-flex flex-column card-contact title align-items-evenly justify-content-evenly vh-100vh pt-5"
-        >
-          <h1
-            class="title_text text-center display-1"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-            data-aos-anchor-placement="top-center"
-            data-aos-anchor="#contact"
-          >
-            Get in touch
-            <span
-              class="d-inline-block colored"
-              data-aos="fade-left"
-              data-aos-anchor="#contact"
-              data-aos-duration="1500"
-              data-aos-anchor-placement="top-center"
-              >—</span
-            ><br /><span
-              class="d-inline-block"
-              data-aos="fade-left"
-              data-aos-anchor="#contact"
-              data-aos-duration="2000"
-              data-aos-anchor-placement="top-center"
-            >
-              let's work</span
-            ><br />together<span
-              class="d-inline-block"
-              data-aos="fade-left"
-              data-aos-anchor="#contact"
-              data-aos-duration="1500"
-              data-aos-anchor-placement="top-center"
-              >.</span
-            >
-          </h1>
-          <div class="button d-flex justify-content-center">
-            <a
-              href="mailto:jay@jaycaguin.com"
-              type="button"
-              id="writeMsg"
-              class="project_link border border-secondary btn-lg my-3"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-anchor="#contact"
-              >Write a Message</a
-            >
-          </div>
-          <div class="contact_socials text-start">
-            <div
-              class="d-flex flex-lg-row flex-column is-inview justify-content-center"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-anchor="#contact"
-            >
-              <div class="col-lg-3 col px-3 mb-1" style="order: 2">
-                <a
-                  class="d-flex justify-content-between align-items-center"
-                  href="https://www.facebook.com/lukefrostwalkr"
-                >
-                  <div class="col-8 p-0">
-                    <p class="mb-1">Facebook</p>
-                    <p class="m-0">@lukefrostwalkr</p>
-                  </div>
-                  <i
-                    class="col-4 text-end fa-brands fa-facebook fa-2xl img"
-                  ></i>
-                </a>
-              </div>
+        <script>
+            $(document).ready(function () {
+                $('.main').onepage_scroll({
+                    sectionContainer: 'section',
+                    responsiveFallback: 600,
+                    loop: true,
+                });
+            });
+        </script>
 
-              <div class="col-lg-3 col px-3 mb-1" style="order: 3">
-                <a
-                  class="d-flex justify-content-between align-items-center"
-                  href="https://www.twitter.com/jaycaguin"
-                >
-                  <div class="col-8 p-0">
-                    <p class="m-1">Twitter</p>
-                    <p class="m-0">@jaycaguin</p>
-                  </div>
-                  <i class="col-4text-end fa-brands fa-twitter fa-2xl img"></i>
-                </a>
-              </div>
-
-              <div class="col-lg-3 col px-3 mb-1" style="order: 4">
-                <a
-                  class="d-flex justify-content-between align-items-center"
-                  href="https://github.com/lukefrostwalker"
-                >
-                  <div class="col-8 p-0">
-                    <p class="m-1">Github</p>
-                    <p class="m-0">@lukefrostwalker</p>
-                  </div>
-                  <i
-                    class="col-4 text-end fa-brands fa-github fa-2xl img-fluid"
-                  ></i>
-                </a>
-              </div>
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
             </div>
-          </div>
+        </div>
+        <div id="navi">
+            <!-- NAV BAR -->
         </div>
 
-        <footer class="container">
-          <div class="card-group mt-5" id="cardGroupIndex">
-            <div class="card border-0">
-              <div class="card-body">
-                <p class="card-title colored">Contact information —</p>
-                <span class="card-text scolor">
-                  <p class="mb-2">Feel free to reach out to me any time.</p>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="mailto:jay@jaycaguin.com"
-                        ><i class="fa-solid fa-envelope me-2"></i>
-                        jay@jaycaguin.com</a
-                      >
-                    </li>
-                    <li>
-                      <a href="tel:+639771550622"
-                        ><i class="fa-solid fa-phone me-2"></i>
-                        +63-977-155-0622</a
-                      >
-                    </li>
-                  </ul>
-                </span>
-              </div>
-            </div>
+        <div class="wrapper">
+            <div class="main">
+                <!-- START HOME SECTION -->
+                <section class="page1 home" id="home">
+                    <div
+                        class="page_container home container d-flex flex-column justify-content-center col-md-10"
+                    >
+                        <h1
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            Hi, you found me! I'm a<br />
+                            <span
+                                class="accent d-inline-block"
+                                data-aos="fade-right"
+                                data-aos-duration="1500"
+                                >full-stack web developer<span
+                                    style="color: #383838"
+                                    >.</span
+                                ></span
+                            ><br />Let's connect and build something amazing
+                            together!
+                        </h1>
+                        <h2
+                            class="accent mt-3"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-anchor="#home"
+                        >
+                            JAY CAGUIN
+                        </h2>
+                    </div>
+                </section>
+                <!-- END HOME SECTION -->
 
-            <div class="card border-0" id="hide">
-              <div class="card-body">
-                <p class="card-title colored">Latest projects —</p>
-                <span class="card-text">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://urbanread.space/"
-                        target="_blank"
-                      >
-                        UrbanRead(MERN)
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://lukefrostwalker.github.io/RockPaperScissorsLizardSpock/"
-                        target="_blank"
-                      >
-                        Jajanken+
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://lukefrostwalker.github.io/Password-GeneratorV2/"
-                        target="_blank"
-                      >
-                        Password Generator
-                      </a>
-                    </li>
-                  </ul>
-                </span>
-              </div>
-            </div>
+                <!-- START WORKS SECTION -->
+                <section class="page2">
+                    <div
+                        class="page_container container d-flex flex-md-row flex-column align-items-md-center justify-content-center"
+                        id="works"
+                    >
+                        <div class="title-card col-md-4 order-md-1 order-2">
+                            <h1 class="mt-3">Works</h1>
+                            <div class="line-container">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <h2>Web Apps</h2>
+                            <a href="works.html" class="link_animation"
+                                >VIEW WORKS</a
+                            >
+                        </div>
+                        <div class="col-md-8 order-md-2 order-1">
+                            <span class="works-image section-image"></span>
+                        </div>
+                    </div>
+                </section>
+                <!-- END WORKS SECTION -->
 
-            <div class="card border-0" id="hide">
-              <div class="card-body">
-                <p class="card-title colored">Follow me on —</p>
-                <span class="card-text">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://www.facebook.com/lukefrostwalkr"
-                        >Facebook</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://www.twitter.com/jaycaguin"
-                        >Twitter</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://github.com/lukefrostwalker"
-                        >Github</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="link_animation"
-                        href="https://www.linkedin.com/in/jaycaguin/"
-                        >LinkedIn</a
-                      >
-                    </li>
-                  </ul>
-                </span>
-              </div>
+                <!-- START ABOUT SECTION -->
+                <section class="page3">
+                    <div
+                        class="page_container container d-flex flex-md-row flex-column align-items-md-center justify-content-center"
+                    >
+                        <div
+                            class="about-title-card col-md-4 order-md-1 order-2"
+                        >
+                            <h1 class="mt-3">About Me</h1>
+                            <div class="line-container">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <h2>A passionate journey of curiosity</h2>
+                            <a href="about.html" class="link_animation"
+                                >READ ABOUT ME</a
+                            >
+                        </div>
+                        <div class="col-md-8 order-md-2 order-1 title_img">
+                            <span class="about-image section-image"></span>
+                        </div>
+                    </div>
+                </section>
+                <!-- END About SECTION -->
+
+                <!-- START CONTACT SECTION -->
+                <section class="page4">
+                    <div
+                        class="page_container container contact d-flex flex-md-row flex-column align-items-md-center justify-content-md-start justify-content-center gap-3"
+                        id="contact"
+                    >
+                        <div class="title-card col-md-6">
+                            <h1>
+                                Get in touch <span class="accent">—</span
+                                ><br />let's work together.
+                            </h1>
+                            <a
+                                href="contact.html"
+                                type="button"
+                                class="mt-3 mb-1"
+                                ><span>Write a message</span></a
+                            >
+                        </div>
+                        <div class="col-md-5 title_img">
+                            <div class="contact-socials container mt-md-5 mt-5">
+                                <div class="is-view">
+                                    <div class="contact-social">
+                                        <a
+                                            href="https://www.facebook.com/lukefrostwalkr"
+                                        >
+                                            <div>
+                                                <p>facebook</p>
+                                                <p>@lukefrostwalkr</p>
+                                            </div>
+                                            <i
+                                                class="fa-brands fa-facebook fa-2xl"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                    <div class="contact-social">
+                                        <a
+                                            href="https://www.twitter.com/jaycaguin"
+                                        >
+                                            <div>
+                                                <p>twitter</p>
+                                                <p>@jaycaguin</p>
+                                            </div>
+                                            <i
+                                                class="fa-brands fa-twitter fa-2xl"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                    <div class="contact-social">
+                                        <a
+                                            href="https://github.com/lukefrostwalker"
+                                        >
+                                            <div>
+                                                <p>github</p>
+                                                <p>@lukefrostwalker</p>
+                                            </div>
+                                            <i
+                                                class="fa-brands fa-github fa-2xl"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="home-footer-container container">
+                            <div>
+                                <img
+                                    src="assets/img/footer_img.png"
+                                    style="width: 40px"
+                                    alt="JC"
+                                />
+                            </div>
+                            <div class="home-footer-info">
+                                <span>Jay Caguin 2023 ● </span>
+                                <span>Pampanga, Philippines</span>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+                <!-- END CONTACT SECTION -->
             </div>
-          </div>
-          <div class="d-flex align-items-center footer ps-1" id="hide">
-            <div class="m-2">
-              <img src="assets/img/footer_img.png" alt="JC/" />
-            </div>
-            <div class="footer_text flex-column scolor">
-              <span><small>Jay Caguin 2023</small></span
-              ><br />
-              <span><small>Pampanga, Philippines</small></span>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+        </div>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- BOOTSTRAP -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+
+        <script>
+            $(document).ready(function () {
+                //Preloader
+                preloaderFadeOutTime = 500;
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+                AOS.init();
+            });
+        </script>
+
+        <script src="assets/js/render.js" type="module"></script>
+    </body>
 </html>
