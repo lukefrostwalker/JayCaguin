@@ -112,7 +112,6 @@ function renderWorks() {
                 <div
                     class="project_card col-12 col-lg-6"
                     data-aos="fade-up"
-                    data-aos-anchor-placement="center-bottom"
                     data-aos-duration="${work.duration}"
                 >
                     <div id="box${work.id}" class="inner">
