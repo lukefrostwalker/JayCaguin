@@ -60,6 +60,8 @@ form h2 {
 a {
     display: inline-block;
 }
+input.form-control:is(:active, :focus),
+textarea.form-control:is(:active, :focus),
 input.form-control,
 textarea.form-control,
 .work-line,
