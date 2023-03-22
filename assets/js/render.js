@@ -29,7 +29,7 @@ function renderNav() {
         [x, d] = ['| <em>contact</em>', 'active'];
     else a = 'active';
     const nav = `
-<nav class="navbar navbar-expand-lg fixed-top bg-light" id="navIndex">
+<nav class="navbar navbar-expand-lg fixed-top" id="navIndex">
     <div class="container">
         <a class="navbar-brand" href="index.html" id="brandIndex">JC ${x}</a>
         <button
@@ -165,7 +165,7 @@ function renderFooter() {
             class="card-group mt-5 container gap-1"
             id="cardGroupIndex"
         >
-            <div class="card border-0 m-0 exluded">
+            <div class="card border-0 m-0">
                 <div class="card-body p-0">
                     <p class="card-title accent">Contact information —</p>
                     <span class="card-text">
