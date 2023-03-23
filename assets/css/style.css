@@ -150,7 +150,7 @@ button[type='submit'] {
 }
 a[type='button']:before,
 button[type='submit']:before {
-    transition: 0.8s cubic-bezier(0.7, 1, 0.2, 1);
+    transition: 0.8s cubic-bezier(0.4, 1, 0.2, 1);
     content: '';
     width: 1.5%;
     height: 100%;
@@ -258,7 +258,7 @@ body {
     border-radius: 10px;
 }
 .skill img {
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 .skill_img .icon {

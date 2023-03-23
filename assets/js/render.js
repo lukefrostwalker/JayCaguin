@@ -1,17 +1,5 @@
 import { works, skills } from './data.js';
-
-renderNav();
-
-if (window.location.href.indexOf('index') > -1) {
-} else {
-    renderFooter();
-}
-
-if (window.location.href.indexOf('works') > -1) {
-    renderWorks();
-} else if (window.location.href.indexOf('about') > -1) {
-    renderSkills();
-}
+const currentUrl = window.location.href;
 
 function renderNav() {
     const navi = document.getElementById('navi');
@@ -19,13 +7,10 @@ function renderNav() {
     let x = '';
     let [a, b, c, d] = ['', '', '', ''];
 
-    if (window.location.href.includes('works'))
-        [x, b] = ['| <em>works</em>', 'active'];
-    else if (window.location.href.includes('about'))
+    if (currentUrl.includes('works')) [x, b] = ['| <em>works</em>', 'active'];
+    else if (currentUrl.includes('about'))
         [x, c] = ['| <em>about</em>', 'active'];
-    else if (window.location.href.includes('contact'))
-        [x, d] = ['| <em>contact</em>', 'active'];
-    else if (window.location.href.includes('thank-you'))
+    else if (currentUrl.includes('contact') || currentUrl.includes('thank-you'))
         [x, d] = ['| <em>contact</em>', 'active'];
     else a = 'active';
     const nav = `
@@ -281,3 +266,5 @@ function renderFooter() {
             </div>
         </div>`;
 }
+
+export { renderNav, renderWorks, renderSkills, renderFooter };
