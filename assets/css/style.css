@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Open+Sans:ital,wght@0,400;1,300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,400&family=Open+Sans:ital,wght@0,400;1,300&display=swap);
 .line,
 button {
     display: block;
@@ -16,7 +16,10 @@ p {
     margin: 0;
 }
 body,
-form h2 {
+form h2,
+.navbar-brand,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
     color: var(--black);
 }
 .about-card h3,
@@ -94,7 +97,8 @@ h1 {
 a {
     font-size: 0.8rem;
 }
-h2 {
+h2,
+.nav-link {
     color: var(--gray);
 }
 .works-title-card a,
@@ -146,9 +150,9 @@ button[type='submit'] {
 }
 a[type='button']:before,
 button[type='submit']:before {
-    transition: 0.8s cubic-bezier(0.7, -0.5, 0.2, 2);
+    transition: 0.8s cubic-bezier(0.7, 1, 0.2, 1);
     content: '';
-    width: 1%;
+    width: 1.5%;
     height: 100%;
     background: var(--accent);
     position: absolute;
@@ -169,6 +173,7 @@ body {
     font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 .navbar-toggler {
     border: transparent;
 }
