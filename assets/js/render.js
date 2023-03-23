@@ -1,7 +1,7 @@
 import { works, skills } from './data.js';
 const currentUrl = window.location.href;
 
-function renderNav() {
+export function renderNav() {
     const navi = document.getElementById('navi');
 
     let x = '';
@@ -90,7 +90,7 @@ function renderNav() {
     navi.innerHTML = nav;
 }
 
-function renderWorks() {
+export function renderWorks() {
     document.getElementById('project_card_container').innerHTML += works
         .map(function (work) {
             return /* HTML */ `
@@ -130,7 +130,7 @@ function renderWorks() {
         .join('');
 }
 
-function renderSkills() {
+export function renderSkills() {
     document.getElementById('skillsContainer').innerHTML += skills
         .map(function (skill) {
             return /* HTML */ ` <div
@@ -145,7 +145,7 @@ function renderSkills() {
         .join('');
 }
 
-function renderFooter() {
+export function renderFooter() {
     document.getElementById('footer').innerHTML = /* HTML */ ` <div
             class="card-group mt-5 container gap-1"
             id="cardGroupIndex"
@@ -266,5 +266,3 @@ function renderFooter() {
             </div>
         </div>`;
 }
-
-export { renderNav, renderWorks, renderSkills, renderFooter };
