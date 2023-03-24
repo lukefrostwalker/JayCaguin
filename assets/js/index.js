@@ -5,6 +5,7 @@ import {
     renderWorks,
 } from './render.js';
 const currentUrl = window.location.href;
+
 AOS.init();
 
 renderNav();
