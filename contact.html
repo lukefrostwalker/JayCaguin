@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>Contact</title>
+        <meta
+            name="description"
+            content="Let's build something great together. Let's brainstorm new tech ideas and explore business opportunities together!"
+        />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -192,6 +196,7 @@
                             document.querySelector('.Phone').value = '';
                             document.querySelector('.Message').value = '';
                             window.location.href = 'thank-you.html';
+                            loader.classList.remove('loader');
                         })
                         .catch((error) => console.log(error.message));
                 });
