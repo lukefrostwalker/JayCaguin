@@ -84,25 +84,25 @@
     background-color: #212529;
 }
 #box1 {
-    background-image: url('../img/websites/urbanread_mern.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984587/portfolio/urbanread_mern_aj5zcl.webp');
 }
 #box2 {
-    background-image: url('../img/websites/codefitmeals.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984587/portfolio/codefitmeals_ezudgp.webp');
 }
 #box3 {
-    background-image: url('../img/websites/jajanken.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984588/portfolio/jajanken_fmf2jc.webp');
 }
 #box4 {
-    background-image: url('../img/websites/passwordgenerator.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984588/portfolio/passwordgenerator_dg8bj4.webp');
 }
 #box5 {
-    background-image: url('../img/websites/todo.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984588/portfolio/todo_nl3ynf.webp');
 }
 #box6 {
-    background-image: url('../img/websites/converterKodego.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984587/portfolio/converterKodego_bzrudr.webp');
 }
 #box7 {
-    background-image: url('../img/websites/converterScrimba.webp');
+    background-image: url('https://res.cloudinary.com/urbanread/image/upload/v1679984587/portfolio/converterScrimba_vcmgtp.webp');
 }
 #box8 {
     background-image: url('https://picsum.photos/480/270');
