@@ -255,7 +255,7 @@ export function renderFooter() {
         <div class="footer-container container">
             <div>
                 <img
-                    src="https://res.cloudinary.com/urbanread/image/upload/v1679984622/portfolio/footer_img_tez5s8.png"
+                    src="assets/img/footer_img.png"
                     style="width: 40px"
                     alt="JC"
                 />

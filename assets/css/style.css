@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,400&family=Open+Sans:ital,wght@0,400;1,300&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,400&family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 .line,
 button {
     display: block;
@@ -193,12 +193,10 @@ body {
     border-radius: 10px;
 }
 .works-image {
-    background: url('https://res.cloudinary.com/urbanread/image/upload/v1679984623/portfolio/work_xwgzpu.png')
-        center/cover no-repeat;
+    background: url(../img/work.png) center/cover no-repeat;
 }
 .about-image {
-    background: url('https://res.cloudinary.com/urbanread/image/upload/v1679984623/portfolio/about_vaw4c8.png')
-        center/cover no-repeat;
+    background: url(../img/about.png) center/cover no-repeat;
 }
 #contact {
     height: 90%;
@@ -230,8 +228,7 @@ body {
 .clip-text {
     margin: 0.25em 0;
     padding: 0.5em 0.75em;
-    background: url('https://res.cloudinary.com/urbanread/image/upload/v1679984623/portfolio/jay_tpbtkj.png')
-        2% 5% / contain no-repeat;
+    background: url(../img/jay.png) 2% 5% / contain no-repeat;
     font-size: clamp(2.2rem, 10dvw, 5rem);
     width: 100dvw;
     color: var(--white);
@@ -381,8 +378,7 @@ form h2 {
 }
 @media (max-width: 991px) {
     .offcanvas-body {
-        background: url('https://res.cloudinary.com/urbanread/image/upload/v1679984622/portfolio/jay_p6epoi.svg')
-            bottom 0 right -22px / contain no-repeat;
+        background: url('../img/jay.svg') bottom 0 right -22px / contain no-repeat;
     }
 }
 @media (min-width: 992px) {
